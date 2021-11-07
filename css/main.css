@@ -106,10 +106,11 @@ a:visited { }
 }
 
 .header {
-  margin-bottom: 1em;
+ 
+   margin-bottom: 1em;
   font-weight: 400;
   position: relative;
-  padding-top: 3em;
+
   text-align: center;
 }
 
@@ -130,11 +131,15 @@ a:visited { }
 
 .logo {
   font-size: 2.8em;
+  display: inline-block;
   margin: 0 0 0.15em 0;
   line-height: 1.05;
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
+  padding: 0.5em;
+  border: 5px solid #830321;
+  border-radius: 15px;
 }
 
 .header__title {
@@ -146,6 +151,11 @@ a:visited { }
    letter-spacing: -0.01em;
 
 }
+
+.header__title--rednight {
+     
+}
+
 .header__subtitle {
   font-size: 1.853em;
   margin: 0;
