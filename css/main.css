@@ -11,8 +11,8 @@
    ========================================================================== */
 
 html {
-    background-color: #e2dad3;
-    color: #46403e;
+    background-color: #030422;
+    color: #f3f3f3;
     font-size: 16px;
     line-height: 1.4;
     font-family: 'Nunito Sans', sans-serif;
@@ -76,7 +76,6 @@ textarea {
    ========================================================================== */
 
 body {
-  background-color: #32357c;
    border-top: 1em solid #830321;
    
 }
@@ -130,12 +129,12 @@ a:visited { }
 */
 
 .logo {
-  font-size: 2.052em;
+  font-size: 2.8em;
   margin: 0 0 0.15em 0;
   line-height: 1.05;
   text-transform: uppercase;
   font-weight: 800;
-   letter-spacing: -0.01em;
+  letter-spacing: -0.01em;
 }
 
 .header__title {
