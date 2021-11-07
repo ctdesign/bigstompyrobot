@@ -116,7 +116,12 @@ a:visited { }
    width: 100%;
 }
 
-
+.signup {
+    border-left: 5px solid #830321;
+    display: block;
+    background-color: rgb(243 243 243 / 14%);
+    padding: 0.35em 0.35em 0.35em 0.5em;
+}
 
 /*
 .header:before {
