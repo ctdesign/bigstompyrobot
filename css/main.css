@@ -76,11 +76,13 @@ textarea {
    ========================================================================== */
 
 body {
-  border-top: 1em solid #32357c
+  background-color: #32357c;
+   border-top: 1em solid #830321;
+   
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000;
+  color: #fff;
 }
 
 h1 { font-size: 3.052em; font-weight: bold;}
@@ -112,6 +114,7 @@ a:visited { }
   text-align: center;
 }
 
+/*
 .header:before {
   border-left: 1em solid #ffde84;
   background-color: #32357c;
@@ -124,16 +127,24 @@ a:visited { }
   left: 0;
   z-index: 10;
 }
+*/
 
-
-
+.logo {
+  font-size: 2.052em;
+  margin: 0 0 0.15em 0;
+  line-height: 1.05;
+  text-transform: uppercase;
+  font-weight: 800;
+   letter-spacing: -0.01em;
+}
 
 .header__title {
   font-size: 2.052em;
   margin: 0 0 0.15em 0;
   line-height: 1.05;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+   letter-spacing: -0.01em;
 
 }
 .header__subtitle {
