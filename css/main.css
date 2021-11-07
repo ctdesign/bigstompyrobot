@@ -107,7 +107,7 @@ a:visited { }
 
 .header {
  border-bottom:  5px solid #830321;
- display: table;
+
   margin-bottom: 2em;
   font-weight: 400;
   position: relative;
@@ -116,10 +116,7 @@ a:visited { }
    width: 100%;
 }
 
-.header__item {
-   display: table-cell;
-   vertical-align: middle;
-}
+
 
 /*
 .header:before {
@@ -203,7 +200,13 @@ float: left;
 
   .header {
       text-align: left;
-  }
+    display: table;   
+}
+
+.header__item {
+   display: table-cell;
+   vertical-align: middle;
+}
 
   .header__img {
     float: right;
