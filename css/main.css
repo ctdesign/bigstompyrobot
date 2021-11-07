@@ -174,10 +174,13 @@ margin-right: 20px;
   font-weight: 200;
 }
 
-.header__img {
-
-  margin: 1em 0;
+.insta {
+float: left;
+   margin-right: 1em;
+   margin-bottom: 1em;
 }
+
+
 
 .main {
     padding: 1em;
