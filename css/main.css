@@ -106,7 +106,7 @@ a:visited { }
 }
 
 .header {
- border-bottom:  1px solid #830321;
+ border-bottom:  5px solid #830321;
  display: table;
   margin-bottom: 2em;
   font-weight: 400;
