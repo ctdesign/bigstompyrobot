@@ -106,12 +106,17 @@ a:visited { }
 }
 
 .header {
- 
-   margin-bottom: 1em;
+ display: table-row;
+  margin-bottom: 1em;
   font-weight: 400;
   position: relative;
 
   text-align: center;
+}
+
+.header__item {
+   display: table-cell;
+   vertical-align: middle;
 }
 
 /*
@@ -129,7 +134,9 @@ a:visited { }
 }
 */
 
-.logo {}
+.logo {
+margin-right: 20px;
+}
 /*
 .logo {
   font-size: 2.8em;
