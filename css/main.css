@@ -106,12 +106,14 @@ a:visited { }
 }
 
 .header {
- display: table-row;
-  margin-bottom: 1em;
+ border-bottom:  1px solid #830321;
+ display: table;
+  margin-bottom: 2em;
   font-weight: 400;
   position: relative;
-
+   padding-bottom: 1em;
   text-align: center;
+   width: 100%;
 }
 
 .header__item {
