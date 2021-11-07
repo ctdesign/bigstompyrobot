@@ -117,7 +117,7 @@ a:visited { }
 }
 
 .signup {
-    border-left: 5px solid #830321;
+    
     display: block;
     background-color: rgb(243 243 243 / 14%);
     padding: 0.5em;
@@ -125,8 +125,9 @@ a:visited { }
 }
 
 .signup__title {
-   font-size: 22px;
-   margin-bottom: 1em;
+   font-size: 1.4em;
+   margin-bottom: 0.75em;
+   text-transform: uppercase;
 }
 
 /*
@@ -189,7 +190,11 @@ float: left;
    margin-bottom: 1em;
 }
 
-
+.product {
+   
+   border-top: 1px solid #fff;
+   padding-top: 1em;
+}
 
 .main {
     padding: 1em;
