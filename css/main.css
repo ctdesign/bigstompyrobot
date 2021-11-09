@@ -103,28 +103,26 @@ a:visited { }
 /*Custom classes*/
 
 .header {
- border-bottom:  5px solid #830321;
-
-  margin-bottom: 2em;
-  font-weight: 400;
-  position: relative;
+   border-bottom:  5px solid #830321;
+   margin-bottom: 2em;
+   font-weight: 400;
+   position: relative;
    padding-bottom: 1em;
-  text-align: center;
+   text-align: center;
    width: 100%;
 }
 
-
 footer {
- border-top: 1px solid #eee;
+   border-top: 1px solid #eee;
    font-size: 0.8em;
 }
 
 .signup {
-    
-    display: block;
-    background-color: rgb(243 243 243 / 14%);
-    padding: 0.5em;
-      margin-bottom: 1em;
+   display: block;
+   background-color: rgb(243 243 243 / 14%);
+   font-size: 0.8em;
+   padding: 0.5em;
+   margin-bottom: 1em;
 }
 
 .signup__title {
@@ -133,9 +131,8 @@ footer {
    text-transform: uppercase;
 }
 
-
 .signup label {
- display: block;   
+   display: block;   
 }
 
 .signup input {
@@ -209,7 +206,7 @@ margin-right: 20px;
 }
 
 .insta {
-float: left;
+   float: left;
    margin-right: 1em;
    margin-bottom: 1em;
 }
@@ -220,10 +217,6 @@ float: left;
    padding-top: 1em;
    margin-top: 1em;
 }
-
-
-
-
 
 /* Screens wider than 700px*/
 
