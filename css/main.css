@@ -112,6 +112,10 @@ a:visited { }
    width: 100%;
 }
 
+.main {
+   padding: 1em;
+}
+
 footer {
    border-top: 1px solid #eee;
    font-size: 0.8em;
@@ -245,12 +249,13 @@ margin-right: 20px;
   }
   .main {
     width: 80%;
+     padding: 0;
     margin: 2em auto 0;
     max-width: 800px;
   }
 
   p {
-    max-width: 28em
+    max-width: 35em
   }
 
   .header {
@@ -278,8 +283,8 @@ margin-right: 20px;
    }
    
    .product__img {
-    float: left;
-      margin: 0 1em 1em 0;
+    float: right;
+      margin: 0 0 1em 1em;
    }
 }
 
