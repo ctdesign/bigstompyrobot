@@ -272,6 +272,11 @@ margin-right: 20px;
     display: inline-block;
       width: auto;
    }
+   
+   .product__img {
+    float: left;
+      margin: 0 1em 1em 0;
+   }
 }
 
 
