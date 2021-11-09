@@ -176,11 +176,11 @@ footer {
     margin-left: 0;
     margin-bottom: 22px;
     padding: 8px 10px 7px;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 0;
     color: #fff;
-    background-color: #00703c;
-    box-shadow: 0 2px 0 #002d18;
+    background-color: #830321;
+    box-shadow: 0 2px 0 #520618;
     text-align: center;
     vertical-align: top;
     cursor: pointer;
