@@ -119,10 +119,10 @@ footer {
 
 .signup {
    display: block;
-   background-color: rgb(243 243 243 / 14%);
+   background-color: rgb(243 243 243 / 18%);
    font-size: 0.8em;
-   padding: 0.5em;
-   margin-bottom: 1em;
+   padding: 1.25em;
+   margin: 0 0 1em 0;
 }
 
 .signup__title {
