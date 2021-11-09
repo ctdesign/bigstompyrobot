@@ -233,6 +233,10 @@ margin-right: 20px;
    margin-top: 1em;
 }
 
+.product__img {
+   border: 1px solid #fff;  
+}
+
 /* Screens wider than 700px*/
 
 @media screen and (min-width:700px) {
