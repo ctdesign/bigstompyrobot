@@ -103,8 +103,8 @@ a:visited { }
 /*Custom classes*/
 
 .header {
-   border-bottom:  5px solid #830321;
-   margin-bottom: 2em;
+/*    border-bottom:  5px solid #830321; */
+/*    margin-bottom: 2em; */
    font-weight: 400;
    position: relative;
    padding-bottom: 1em;
@@ -125,7 +125,7 @@ footer {
    display: block;
    background-color: rgb(243 243 243 / 18%);
    font-size: 0.8em;
-   padding: 1.25em;
+   padding: 1em;
    margin: 0 0 1em 0;
 }
 
@@ -187,9 +187,9 @@ footer {
     -webkit-appearance: none;   
 }
 
-/*
-.header:before {
-  border-left: 1em solid #ffde84;
+
+.logo:before {
+/*   border-left: 1em solid #ffde84;
   background-color: #32357c;
   border-right: 1em solid #ff4a74;
   content: "";
@@ -198,9 +198,13 @@ footer {
   height: 1em;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10; */
 }
-*/
+
+.logo:before {
+   
+}
+
 
 .logo {
 margin-right: 20px;
