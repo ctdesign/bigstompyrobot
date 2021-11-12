@@ -105,7 +105,7 @@ a:visited { }
 
 .header {
 /*    border-bottom:  5px solid #830321; */
-   background-color: #a52b2b;
+   background: url('../img/bg-science.png') top left repeat #a52b2b;
    margin-bottom: 2em; 
    font-weight: 400;
    position: relative;
