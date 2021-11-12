@@ -203,13 +203,9 @@ footer {
   z-index: 10; */
 }
 
-.logo:before {
-   
-}
-
-
 .logo {
 margin-right: 20px;
+   margin-bottom: 1em;
 }
 
 .header__title {
