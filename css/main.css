@@ -239,7 +239,9 @@ footer {
 
 }
 .product__img {
-   border: 1px solid #fff;  
+   border: 1px solid #fff;
+   display: block;
+   margin: 0 auto 1em ;
 }
 
 /* Screens wider than 700px*/
