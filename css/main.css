@@ -206,22 +206,14 @@ footer {
     -webkit-appearance: none;   
 }
 
-.header__title {
-   color: #fff;
-  font-size: 2.052em;
-  margin: 0 0 0.15em 0;
-  line-height: 1.05;
-  text-transform: uppercase;
-  font-weight: 800;
-   letter-spacing: -0.01em;
 
-}
 
-.header__subtitle {
+.section__title {
   font-size: 1.2em;
   margin: 0;
   line-height: 1.05;
   font-weight: 200;
+   text-transform: uppercase;
 }
 
 .insta {
@@ -235,7 +227,16 @@ footer {
    padding-top: 1em;
    margin-top: 1em;
 }
+.product__title {
+   color: #fff;
+  font-size: 2.052em;
+  margin: 0 0 0.15em 0;
+  line-height: 1.05;
+  text-transform: uppercase;
+  font-weight: 800;
+   letter-spacing: -0.01em;
 
+}
 .product__img {
    border: 1px solid #fff;  
 }
