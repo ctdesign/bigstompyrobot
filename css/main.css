@@ -77,7 +77,7 @@ textarea {
 
 body {
 /*    border-top: 1em solid #830321; */
-   padding: 1em;
+/*    padding: 1em; */
    
 }
 
@@ -114,8 +114,8 @@ a:visited { }
    width: 100%;
 }
 
-.main {
-   padding: 1em 0;
+.main, .footer {
+   padding: 1em;
 }
 
 footer {
@@ -251,11 +251,13 @@ footer {
    }
   .main {
     width: 80%;
-     padding: 0;
+    padding: 0;
     margin: 2em auto 0;
     max-width: 800px;
   }
-
+   .footer {
+   padding: 0; 
+}
   p {
     max-width: 35em
   }
@@ -288,6 +290,7 @@ footer {
     float: right;
       margin: 0 0 1em 1em;
    }
+   
 }
 
 /*==================================================================
