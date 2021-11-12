@@ -76,7 +76,7 @@ textarea {
    ========================================================================== */
 
 body {
-   border-top: 1em solid #830321;
+/*    border-top: 1em solid #830321; */
    
 }
 
@@ -104,16 +104,17 @@ a:visited { }
 
 .header {
 /*    border-bottom:  5px solid #830321; */
-/*    margin-bottom: 2em; */
+   background-color: #a52b2b;
+   margin-bottom: 2em; 
    font-weight: 400;
    position: relative;
-   padding-bottom: 1em;
+   padding: 1.5em 0;
    text-align: center;
    width: 100%;
 }
 
 .main {
-   padding: 1em;
+   padding: 1em 0;
 }
 
 footer {
@@ -122,6 +123,7 @@ footer {
 }
 
 .signup {
+   border: 2px solid #fff;
    display: block;
    background-color: #a52b2b;
    font-size: 0.8em;
