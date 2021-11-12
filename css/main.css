@@ -138,6 +138,7 @@ footer {
 
 .logo {
    margin-right: 20px;
+   line-height: 1;
 }
 
 .signup {
@@ -263,10 +264,12 @@ footer {
     max-width: 35em
   }
 
-  .header {
-      text-align: left;
-    display: table;   
-}
+  .header > .main {
+    text-align: left;
+    display: table;
+    border-collapse: collapse;
+    table-layout: auto;
+   }
 
 .header__item {
    display: table-cell;
