@@ -95,7 +95,7 @@ p, li, form {
   line-height: 1.5;
 }
 
-a { color: #5692ff; font-weight: bold;}
+a { color: #a52b2b; font-weight: bold;}
 a:hover { text-decoration: none}
 a:active { }
 a:visited { }
@@ -123,13 +123,30 @@ footer {
    font-size: 0.8em;
 }
 
+.logo:before {
+/*   border-left: 1em solid #ffde84;
+  background-color: #32357c;
+  border-right: 1em solid #ff4a74;
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0;
+  left: 0;
+  z-index: 10; */
+}
+
+.logo {
+   margin-right: 20px;
+}
+
 .signup {
    border: 2px solid #fff;
    display: block;
    background-color: #a52b2b;
    font-size: 0.8em;
    padding: 1em;
-   margin: 0 0 1em 0;
+   margin: 1em 0;
 }
 
 .signup__title {
@@ -147,7 +164,6 @@ footer {
 }
 
 .email {
-
     font-weight: 400;
     line-height: 1.25;
     -webkit-box-sizing: border-box;
@@ -190,25 +206,6 @@ footer {
     -webkit-appearance: none;   
 }
 
-
-.logo:before {
-/*   border-left: 1em solid #ffde84;
-  background-color: #32357c;
-  border-right: 1em solid #ff4a74;
-  content: "";
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  top: 0;
-  left: 0;
-  z-index: 10; */
-}
-
-.logo {
-margin-right: 20px;
-   margin-bottom: 1em;
-}
-
 .header__title {
    color: #fff;
   font-size: 2.052em;
@@ -234,7 +231,6 @@ margin-right: 20px;
 }
 
 .product {
-   
    border-top: 1px solid #fff;
    padding-top: 1em;
    margin-top: 1em;
@@ -293,9 +289,6 @@ margin-right: 20px;
       margin: 0 0 1em 1em;
    }
 }
-
-
-
 
 /*==================================================================
    Helper classes
@@ -382,10 +375,6 @@ margin-right: 20px;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
