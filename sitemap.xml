@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bigstompyrobot.com/comics/</loc>
+  </url><url>
+    <loc>https://bigstompyrobot.com/blog/</loc>
+    <lastmod>2022-01-08T12:21:22+00:00</lastmod>
+  </url><url>
+    <loc>https://bigstompyrobot.com/about/</loc>
+  </url><url>
+    <loc>https://bigstompyrobot.com/contact/</loc>
+  </url><url>
+    <loc>https://bigstompyrobot.com/tags/development/</loc>
+    <lastmod>2022-01-08T12:21:22+00:00</lastmod>
+  </url><url>
+    <loc>https://bigstompyrobot.com/</loc>
+    <lastmod>2022-01-08T12:21:22+00:00</lastmod>
+  </url><url>
+    <loc>https://bigstompyrobot.com/blog/minimum-viable-comics/</loc>
+    <lastmod>2022-01-08T12:21:22+00:00</lastmod>
+  </url><url>
+    <loc>https://bigstompyrobot.com/tags/red-night/</loc>
+    <lastmod>2022-01-08T12:21:22+00:00</lastmod>
+  </url><url>
+    <loc>https://bigstompyrobot.com/tags/</loc>
+    <lastmod>2022-01-08T12:21:22+00:00</lastmod>
+  </url><url>
+    <loc>https://bigstompyrobot.com/blog/how-i-made-my-first-comic/</loc>
+    <lastmod>2022-01-07T08:27:22+00:00</lastmod>
+  </url><url>
+    <loc>https://bigstompyrobot.com/blog/site-update/</loc>
+    <lastmod>2022-01-05T11:27:22+00:00</lastmod>
+  </url><url>
+    <loc>https://bigstompyrobot.com/categories/</loc>
+  </url>
+</urlset>
