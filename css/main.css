@@ -273,6 +273,11 @@ footer {
 
 /*Components*/
 
+.img-fluid {
+  width:100%;
+  display: block;
+  }
+
 .logo {
    line-height: 1;
 }
