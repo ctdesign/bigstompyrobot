@@ -27,20 +27,20 @@
 
 <body class="{% if page.layout %}layout-{{ page.layout }}{% endif %}">
 
-  <!-- <main class="main" id="content" > -->
-  
+  <!-- <a class="skipcontent" href="#content" >Skip to main content</a> -->
     {% include header.html %}
-  
-    <div class="grid-container">
-      <div class="grid-row">
-        
-      {{ content }}
+
+    <main class="main" id="content" >
+      
+      <div class="grid-container clearfix">
+        {{ content }}
       </div>
-    </div><!-- grid container-->
+      
+    </main>
 
     {% include footer.html %}
 
-  <!-- </main> -->
+  </main>
 
 </body>
 </html>

@@ -1,16 +1,18 @@
-<header class="grid-container header">
-    <div class="grid-row">
-        <div class="grid-column-one-third">
-            <h1 class="logo"><a href="{{ '/' | relative_url }}">Big Stompy Robot</a></h1>
-        </div>
-        <div class="grid-column-two-thirds">
-            <nav class="nav-main">
-                <ul class="list--h">
-                    {% for item in site.data.navigation %}
-                    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </nav>
+<header class="header">
+    <div class="grid-container clearfix ">
+        <div class="grid-row">
+            <div class="grid-column-one-third">
+                <a href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/bsr-logo-stack.svg' | relative_url }}" alt="Big Stompy Robot" width="230"></a>
+            </div>
+            <div class="grid-column-two-thirds">
+                <nav class="nav-main">
+                    <ul class="list--h">
+                        {% for item in site.data.navigation %}
+                        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 </header>

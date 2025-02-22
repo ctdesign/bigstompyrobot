@@ -1,28 +1,41 @@
 ---
-layout: default 
+layout: default
 ---
-
-<div class="grid-column-two-thirds">
+<div class="grid-row">
+  <div class="grid-column-two-thirds">
     <h3>Latest blog</h3>
-</div>
-<div class="grid-column-one-third">
-    <h3>Sign up to the newsletter</h3>
-    <div id="mc_embed_signup">
-        <form action="https://bigstompyrobot.us20.list-manage.com/subscribe/post?u=f18cedf90e42f21a184db9ccf&amp;id=a30654b263" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div class="form-group">
-            <label for="mce-EMAIL">Email address </label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-          </div>
-          <div class="form-group">
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-          </div>
-          <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f18cedf90e42f21a184db9ccf_a30654b263" tabindex="-1" value=""></div>
-        </form>
-      </div>
-      
 
+    <ul class="content-list">
+      {% for post in site.posts limit:3 %}
+      <li class="content-list__item">
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        <p>{{ post.excerpt }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="grid-column-one-third">
+    <h3>Join our community!</h3>
+    <p>Subscribe to our newsletter for behind the scenes peaks and exclusive subscriber only previews of upcoming projects!</p>
+    <div id="mc_embed_signup">
+      <form
+        action="https://bigstompyrobot.us20.list-manage.com/subscribe/post?u=f18cedf90e42f21a184db9ccf&amp;id=a30654b263"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+        novalidate>
+        <div class="form-group">
+          <label for="mce-EMAIL">Email address </label>
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+        <div id="mce-responses" class="clear foot">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+            name="b_f18cedf90e42f21a184db9ccf_a30654b263" tabindex="-1" value=""></div>
+      </form>
+    </div>
+  </div>
 </div>

@@ -2,7 +2,17 @@
 layout: default 
 ---
 
-<h1>{{page.title}}</h1>
-<p>{{ page.date | date: "%B %d, %Y" }}</p>
-
-{{content}}
+<div class="grid-row">
+    <div class="grid-column-full">
+        <h1>{{page.title}}</h1>
+        <p>{{ page.date | date: "%B %d, %Y" }}</p>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="grid-column-two-thirds">
+        {{content}}
+    </div>
+    <div class="grid-column-one-third">
+        <p>sidebar</p>
+    </div>
+</div>
