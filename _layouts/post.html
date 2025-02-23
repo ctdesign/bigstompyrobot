@@ -1,0 +1,28 @@
+---
+layout: default 
+---
+
+<div class="grid-row">
+    <div class="grid-column-full">
+        <h1>{{page.title}}</h1>
+        <p>{{ page.date | date: "%B %d, %Y" }}</p>
+    </div>
+</div>
+<div class="grid-row">
+    <div class="grid-column-two-thirds">
+        {{content}}
+    </div>
+    <div class="grid-column-one-third">
+        <h4>Related posts</h4>
+
+        {% capture category %}{{ page.categories | first }}{% endcapture %}
+        <ul class="list">
+            {% for post in site.categories[category] limit: 5 %}
+                <li>
+                    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                    
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
