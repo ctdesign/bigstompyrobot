@@ -29,7 +29,6 @@ BASE DEFAULT STYLES
     color: #000;
 }
 
-
 ::-moz-selection {
     background: #0A2454;
     text-shadow: none;
@@ -180,6 +179,10 @@ CUSTOM STYLES
 .grid-container {
     display: block;
     margin: 0 auto;
+
+   .header & {
+      padding 1.6em;
+   }
 
     .main &, .footer & {
         padding: 1.6em;
