@@ -31,15 +31,15 @@ BASE DEFAULT STYLES
 
 
 ::-moz-selection {
-    background: yellow;
+    background: #0A2454;
     text-shadow: none;
-    color: #000;
+    color: #fff;
 }
 
 ::selection {
-    background: yellow;
+    background: #0A2454;
     text-shadow: none;
-    color: #000;
+    color: #fff;
 }
 
 /* A better looking default horizontal rule */
@@ -167,6 +167,16 @@ img {
     max-width: 100%;
 }
 
+blockquote {
+   background-color: #e0e7f2;
+    margin-left: 0;
+    padding: 1.75em;
+    border-left: 1em solid #0A2454;
+    font-style: italic;
+}
+
+a:link {color: $col-theme-compli; text-decoration: underline}
+a:hover {text-decoration: none}
 /* ==========================================================================
 CUSTOM STYLES
 ============================================================================= */
