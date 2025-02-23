@@ -2,7 +2,7 @@
 layout: post
 title:  "Getting feedback on Red Night"
 date:   2025-02-21 
-categories: making-of rednight
+categories: "making-of"
 ---
 
 There comes a point in every creators life where you have to step out from your cave and actually get feedback. 

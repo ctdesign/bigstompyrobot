@@ -30,7 +30,6 @@ collections:
     output: true
     permalink: /comics/:title/
 
-
 defaults:
   - scope:
       path: ""

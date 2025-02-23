@@ -2,7 +2,7 @@
 title: "Red Night"
 date: 2025-02-08
 collection: comics
-layout: post
+layout: comic-single
 thumb: "/assets/images/comics/red-night/red-night-thumb.jpg"
 ---
 
@@ -24,7 +24,7 @@ Will his noble intentions and stiff upper lip be enough to uncover the truth of 
 
 ![Red Night page 5](/assets/images/comics/red-night/Rednight-pt1-pg5_web.jpg)
 
-![Red Night page 6](/assets/images/comics/red-night/Rednight-pt1-pg1_web.jpg)
+![Red Night page 6](/assets/images/comics/red-night/Rednight-pt1-pg6_web.jpg)
     
 End of part 1...
     

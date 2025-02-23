@@ -5,8 +5,8 @@
 VARS
 ============================================================================= */
 
-$col-theme-accent: #003554;
-$col-theme-contrast: #D9DBF1;
+$col-theme-accent: #a52b2b;
+$col-theme-compli: #0A2454;
 $fontstyle-base:  "Aleo", serif;
 $fontstyle-heading: "Chakra Petch", serif;
 
@@ -22,10 +22,11 @@ button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=
 BASE DEFAULT STYLES
 ============================================================================= */
    html {
-    background: #fff;
+    background-color: #fff;
     font-size: 18px;
     line-height: 1.45;
     font-family: $fontstyle-base ;
+    color: #000;
 }
 
 
@@ -90,8 +91,6 @@ h6 { font-size: 1.2rem;}
 
 small, .small {font-size: 0.833rem;}
 
-
-
 ul,
 ol {
     list-style-position: outside;
@@ -109,32 +108,64 @@ CUSTOM STYLES
 ============================================================================= */
 
 /* Structure and grid */
-
 .grid-container {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    max-width: 960px;
-    margin: 0 auto
+    margin: 0 auto;
+
+    .main &, .footer & {
+        padding: 1.6em;
+    }
 }
 
 .grid-row {
     display: block;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 .grid-column-one-third,
 .grid-column-two-thirds,
 .grid-column-full,
-.grid-column-one-half   {
-    box-sizing: border-box;
+.grid-column-one-half {
     width: 100%;
-    padding: 0 15px;
-
 }
 
 @media screen and (min-width:960px) {
+    .logo a {
+        text-align: left!important;
+    }
+
+    .nav-main {
+        font-family: $fontstyle-heading;
+        text-transform: uppercase;
+        text-align: right!important;
+    }
+
+    .header .grid-row {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .header .grid-container {
+        padding: 0;
+    }
+
+    .grid-container {
+        max-width: 960px;
+        padding: 1.6em 0;
+    }
+
+    .grid-row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .grid-column-one-third,
+    .grid-column-two-thirds,
+    .grid-column-full,
+    .grid-column-one-half {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
     .grid-container  {
         margin-right: auto;
         margin-left: auto;
@@ -158,7 +189,8 @@ CUSTOM STYLES
 }
 
 .header {
-    background-color: red;
+    background: url('/assets/images/header-bg.jpg') no-repeat left top $col-theme-accent;
+    background-size: cover;
 }
 
 .logo {
@@ -167,21 +199,32 @@ CUSTOM STYLES
 }
 
 .logo a {
+    display: block;
     text-decoration: none;
-    font-weight: normal;
+    font-weight: normal;    
+    text-align: center;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
 }
 
-.logo a:hover {
-    text-decoration: underline;
-}
-
-.nav {
+.nav-main {
     margin: 0;
     padding: 0;
-}
+    text-align: center;
+    font-size: 1.2em;
 
-.nav li a {
-    font-weight: normal;
+    & li {
+        margin-bottom: 0;
+    }
+
+    & li a {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+    }
 }
 
 .list--h {
@@ -202,12 +245,29 @@ CUSTOM STYLES
 }
 
 .footer {
+    border-top: 1px solid #000;
     clear: both;
 }
 
 .skipcontent {
     display: block;
     
+}
+
+.content-list {
+    list-style: none;
+}
+
+.content-list li:last-of-type {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.layout-comic-single .main img {
+    border: 3px solid #000;
 }
 
 /* ==========================================================================
