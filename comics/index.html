@@ -4,14 +4,18 @@ title: Comics
 permalink: /comics/
 ---
 
-<h2>Comics index page</h2>
+<h2>Our comic releases</h2>
 
-<ul class="comic-list">
+<ul class="content-list">
   {% for post in site.comics reversed %}
-    <li class="comic-list__item">
+    <li class="content-list__item">
       <a href="{{ post.url }}" class="">
         <h3 class="comic-list__title">{{post.title }}</h3>
+        <img src="{{post.thumb}}" width="300" height="300" />
+        <p>{{ post.blurb }}</p>
       </a> 
     </li>
   {% endfor %}
 </ul>
+
+<p>More titles coming soon...</p>

@@ -13,6 +13,14 @@ layout: default
         {{content}}
     </div>
     <div class="grid-column-one-third">
-        sidebar
+        <dl>
+            <dt>Title:</dt>
+            <dd>{{ page.title }}</dd>
+            <dt>Released on:</dt>
+            <dd>{{ page.date | date: "%B %d, %Y" }}</dd>
+       
+        </dl>
+         
+
     </div>
 </div>

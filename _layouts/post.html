@@ -16,11 +16,11 @@ layout: default
         <h4>Related posts</h4>
 
         {% capture category %}{{ page.categories | first }}{% endcapture %}
-        <ul>
+        <ul class="list">
             {% for post in site.categories[category] limit: 5 %}
                 <li>
                     <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                    <span class="post-meta">{{ post.url | relative_url }}"</span>
+                    
                 </li>
             {% endfor %}
         </ul>

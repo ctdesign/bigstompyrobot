@@ -76,6 +76,56 @@ textarea {
     resize: vertical;
 }
 
+label {
+    display: block;
+}
+
+input {
+    font-weight: 400;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 41px;
+    height: 2.3rem;
+    margin-top: 0;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 10px;
+    margin-bottom: 0.5em;
+    max-width: 18em;
+}
+
+.button {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.1875;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 22px;
+    padding: 8px 10px 7px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #fff;
+    background-color: #830321;
+    box-shadow: 0 2px 0 #520618;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    -webkit-appearance: none;
+   
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $fontstyle-heading;
     margin: 0.3em 0 0.65em;
@@ -101,6 +151,20 @@ ol {
         margin-bottom: 1em;
         list-style-position: outside;
     }
+}
+
+dt {
+    font-weight: bold;
+    display: block;
+}
+
+dd {
+    display: inline-block;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* ==========================================================================
@@ -227,6 +291,11 @@ CUSTOM STYLES
     }
 }
 
+.list {
+    list-style: none;
+    list-style-position: inside;
+}
+
 .list--h {
     list-style: none;
     list-style-position: inside;
@@ -260,10 +329,6 @@ CUSTOM STYLES
 
 .content-list li:last-of-type {
     margin-bottom: 0;
-}
-
-img {
-    max-width: 100%;
 }
 
 .layout-comic-single .main img {

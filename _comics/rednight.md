@@ -1,9 +1,10 @@
 ---
 title: "Red Night"
+blurb: "A thrilling new sci-fi action adventure"
 date: 2025-02-08
 collection: comics
 layout: comic-single
-thumb: "/assets/images/comics/red-night/red-night-thumb.jpg"
+thumb: "/assets/images/comics/red-night/rednight-thumb.jpg"
 ---
 
 Red Night is the thrilling debut from Chris Taylor, featuring an action packed mystery set in a fantastical and retro-futuristic universe.
