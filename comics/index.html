@@ -11,21 +11,21 @@ permalink: /comics/
   
     {% for post in site.comics reversed %}
       {% if forloop.index0 % 3 == 0 %}
-        <ul class="content-list">
+        <div class="content-list grid-column-row ">
       {% endif %}
 
-      <li class="content-list__item grid-column-one-third">
+      <div class="content-list__item grid-column-one-third">
         <a href="{{ post.url }}" class="">
           <h3 class="comic-list__title">{{ post.title }}</h3>
           <img src="{{ post.thumb }}" width="300" height="300" />
           <p>{{ post.blurb }}</p>
         </a>
-      </li>
+      </div>
 
       {% assign remainder = forloop.index | modulo: 3 %}
       {% if remainder == 0 or forloop.last %}
-    </ul>
+    </div>
       {% endif %}
     {% endfor %}
-  </ul>
-</div>
+
+
