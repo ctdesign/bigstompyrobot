@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "New short comic: Suitible for Salvage"
+title:  "New comic: Suitible for Salvage"
 date:   2026-06-29 
 categories: making-of sfs
 author: "Chris Taylor"
 genre: "Sci-fi"
 ---
 
-I've drawn a new short comic, written by my good friend Craig Parker. 
+We've made a new thigs! Written by my good friend Craig Parker and drawn by me. 
 
-Titled 'Suitable for Salvage', it's a sci-fi story about a lone space breakdown specialist working for the Intergalactic Highway Repair (IGHR) corporation, who has a rather eventful day...
+_Suitable for Salvage_ is a short sci-fi story about a lone, space-breakdown specialist working for the Intergalactic Highway Repair (IGHR) corporation, who has a rather eventful day...
 
-Check it out.
+[Have a read]('/comics/suitible-for-salvage') over on the comic section. 
