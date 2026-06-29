@@ -1,7 +1,7 @@
 ---
 title: "Suitable for Salvage"
 blurb: "Something always goes wrong in space. When it does, the Intergalactic Highway Repair corporation is there."
-date: 2025-02-08
+date: 2026-06-29
 collection: comics
 layout: comic-single
 thumb: "/assets/images/comics/sfs/sfs-thumb.jpg"
