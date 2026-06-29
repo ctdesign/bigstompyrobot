@@ -13,6 +13,8 @@ In space, something is bound to go wrong on a ship. When it does, the Intergalac
 
 It almost makes you wonder what would motivate someone to do it...
 
+![Suitable for Salvage cover](/assets/images/comics/sfs/sfs-cover_web.jpg)
+
 ![Suitable for Salvage page 1](/assets/images/comics/sfs/sfs-pg1_web.jpg)
 
 ![Suitable for Salvage page 2](/assets/images/comics/sfs/sfs-pg2_web.jpg)
