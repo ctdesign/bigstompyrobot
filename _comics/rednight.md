@@ -1,6 +1,6 @@
 ---
 title: "Red Night"
-blurb: "A thrilling new sci-fi action adventure"
+blurb: "An action packed mystery set in a fantastical and retro-futuristic universe."
 date: 2025-02-08
 collection: comics
 layout: comic-single
