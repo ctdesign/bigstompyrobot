@@ -329,54 +329,36 @@ CUSTOM STYLES
     display: block;
 }
 
-// .content-list {
-//     list-style: none;
-// }
-
-// .content-list li:last-of-type {
-//     margin-bottom: 0;
-// }
-
 .content-list {
-  display: flex;
-  flex-wrap: nowrap;       /* each "row" div already only holds 3 items */
+    list-style: none;
+}
+
+.content-list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.content-list--grid {
+ display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 
-.content-list__item {
-  display: flex;
+    & .content-list__item {
+        display: flex;
   flex-direction: column;
-}
-
-.grid-column-one-third {
-  flex: 0 0 calc(33.333% - 1rem); /* accounts for the gap */
-  max-width: calc(33.333% - 1rem);
-}
-
-.content-list__item a {
+    }
+& .content-list__item a {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: inherit;
+  height: 100%;
 }
-
-.comic-list__title {
-  min-height: 2.4em;       /* reserve space for up to 2 lines so images align */
+   & .content-list__title {
+  min-height: 2.4em;
   display: flex;
-  align-items: flex-end;   /* short titles sit at the bottom of that space */
+  align-items: flex-end;
   margin: 0 0 0.5em 0;
 }
-
-.content-list__item img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 0.5em;
-}
-
-.content-list__item p {
-  margin: 0;
 }
 
 .layout-comic-single .main img {

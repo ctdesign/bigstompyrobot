@@ -4,28 +4,21 @@ title: Comics
 permalink: /comics/
 ---
 
-<div class="grid-column-row">
+<div class="grid-row">
   <h2 class="title">Our comic releases</h2>
-  </div>
+  <div class="grid-column-full ">
+    <ul class="content-list content-list--grid">
 
-  
     {% for post in site.comics reversed %}
-      {% if forloop.index0 % 3 == 0 %}
-        <div class="content-list grid-column-row ">
-      {% endif %}
 
-      <div class="content-list__item grid-column-one-third">
+      <li class="content-list__item ">
         <a href="{{ post.url }}" class="">
-          <h3 class="comic-list__title">{{ post.title }}</h3>
+          <h3 class="content-list__title">{{ post.title }}</h3>
           <img src="{{ post.thumb }}" width="300" height="300" />
           <p>{{ post.blurb }}</p>
         </a>
-      </div>
+      </li>
 
-      {% assign remainder = forloop.index | modulo: 3 %}
-      {% if remainder == 0 or forloop.last %}
-    </div>
-      {% endif %}
     {% endfor %}
-
-
+    </ul>
+</div>

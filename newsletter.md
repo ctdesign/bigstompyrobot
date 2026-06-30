@@ -1,5 +1,5 @@
 ---
-permalink: /newsletter
+permalink: /newsletter/
 layout: default
 ---
 
