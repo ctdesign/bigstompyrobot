@@ -4,21 +4,36 @@ title: Comics
 permalink: /comics/
 ---
 
+ <div class="grid-container clearfix">
 <div class="grid-row">
-  <h2 class="title">Our comic releases</h2>
+  
   <div class="grid-column-full ">
+    <h2 class="title">Our releases</h2>
     <ul class="content-list content-list--grid">
 
     {% for post in site.comics reversed %}
 
-      <li class="content-list__item ">
-        <a href="{{ post.url }}" class="">
-          <h3 class="content-list__title">{{ post.title }}</h3>
-          <img src="{{ post.thumb }}" width="300" height="300" />
-          <p>{{ post.blurb }}</p>
+   
+
+      <li class="content-list__item">
+        <a href="{{ post.url }}" class="content-list__link">
+
+          
+<span class="comic-cover">
+
+  <span class="comic-cover__inner">
+    <img src="{{ post.thumb }}" width="600"/>
+    <span class="comic-cover__shine"></span>
+  </span>
+</span>
+       
         </a>
+           <h3 class="content-list__title">{{ post.title }}</h3>
+          <p>{{ post.blurb }}</p>
+          <a href="{{ post.url }}" class="content-list__more">Read now &#8594;</a>
       </li>
 
     {% endfor %}
     </ul>
+</div>
 </div>

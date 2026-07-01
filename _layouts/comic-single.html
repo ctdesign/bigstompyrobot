@@ -1,13 +1,15 @@
 ---
 layout: default 
 ---
+ <div class="grid-container clearfix">
+    <h1>{{page.title}}</h1>
 <div class="grid-row">
     <div class="grid-column-two-thirds">
-        <h1>{{page.title}}</h1>
+        
         {{content}}
     </div>
     <div class="grid-column-one-third">
-        <dl>
+        <dl class="panel">
             <dt>Title:</dt>
             <dd>{{ page.title }}</dd>
             <dt>Released on:</dt>
@@ -17,4 +19,5 @@ layout: default
          
 
     </div>
+</div>
 </div>

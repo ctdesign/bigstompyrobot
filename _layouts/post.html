@@ -2,6 +2,7 @@
 layout: default 
 ---
 
+ <div class="grid-container clearfix">
 <div class="grid-row">
     <div class="grid-column-full">
         <h1>{{page.title}}</h1>
@@ -13,16 +14,19 @@ layout: default
         {{content}}
     </div>
     <div class="grid-column-one-third">
+        <div class="panel">
         <h4>Related posts</h4>
 
         {% capture category %}{{ page.categories | first }}{% endcapture %}
-        <ul class="list">
+        <ul class="list-unstyled">
             {% for post in site.categories[category] limit: 5 %}
-                <li>
+                <li >
                     <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                     
                 </li>
             {% endfor %}
         </ul>
     </div>
+    </div>
+</div>
 </div>
