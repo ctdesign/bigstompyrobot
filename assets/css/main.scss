@@ -143,7 +143,7 @@ input {
 h1, h2, h3, h4, h5, h6 {
 
 font-family:'Archivo Black', sans-serif;
-  text-transform:uppercase;
+  
   letter-spacing:0.01em;
   line-height:1.15;
   margin:0 0 16px;
@@ -155,6 +155,8 @@ h3 { font-size: 2.074rem;}
 h4 { font-size: 1.728rem;}
 h5 { font-size: 1.44rem;}
 h6 { font-size: 1.2rem;}
+
+p {margin-top: 0;}
 
 small, .small {font-size: 0.833rem;}
 
@@ -170,10 +172,14 @@ ol {
     }
 }
 
+dl {
+  margin-top: 0;
+}
 dt {
     font-weight: bold;
     display: block;
    text-transform: uppercase;
+   margin-top: 0;
 }
 
 dd {
@@ -235,7 +241,7 @@ CUSTOM STYLES
     width: 100%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:820px) {
     .logo a {
         // text-align: left!important;
     }
@@ -252,7 +258,7 @@ CUSTOM STYLES
     }
 
     .header .grid-container {
-        padding: 0;
+        // padding: 0;
     }
 
     .grid-container {
@@ -311,10 +317,10 @@ CUSTOM STYLES
   // border-bottom:var(--line) solid var(--ink);
   background:  #a52b2b;
   border-bottom:var(--line) solid var(--ink);
-  padding:18px 0;
+  // padding:18px 0;
 }
 
-.header .grid-container {padding-top: 0; padding-bottom: 0;}
+.header .grid-container {padding: 1em}
 
 .header .grid-row{align-items:center;}
 
@@ -324,7 +330,6 @@ CUSTOM STYLES
 //   width:220px;
   height:auto;
 }
-
 
 
 .nav-main .list--h{justify-content: center; }
@@ -346,12 +351,20 @@ CUSTOM STYLES
 }
 
 
-@media (min-width:768px){
+@media (min-width:820px){
   // .nav-main .list--h{justify-content:flex-start; margin-top:16px;}
   .logo {text-align: left;}
 
-  .nav-main a {padding: 10px 16px;}
+ 
 }
+
+@media (min-width:960px){
+
+
+ .nav-main a {padding: 10px 16px;}
+
+}
+
 /* ---------- main / ad banner (hero) ---------- */
 .main{padding: 0;}
 
@@ -378,6 +391,7 @@ CUSTOM STYLES
   position:relative;
   padding-bottom:10px;
   margin-bottom:28px;
+  text-transform: uppercase;
 }
 .grid-column-two-thirds > h3::after,
 .grid-column-one-third > h3::after{
@@ -388,8 +402,6 @@ CUSTOM STYLES
   height:4px;
   background:var(--red);
 }
-
-
 
 /* ---------- blog post cards ---------- */
 .content-list{
@@ -416,7 +428,7 @@ CUSTOM STYLES
 // }
 
 /* the halftone dot grid, bottom-right corner */
-.content-list__item::after{
+.panel::after, .content-list__item::after{
   content:"";
   position:absolute;
   bottom:-10px; right:-10px;
@@ -425,6 +437,10 @@ CUSTOM STYLES
   background-size:9px 9px;
   opacity:0.1;
   pointer-events:none;
+}
+
+.content-list--grid .content-list__item::after{
+  display: none;
 }
 
 .content-list__meta {
@@ -476,9 +492,13 @@ CUSTOM STYLES
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  .book {
+    margin-bottom: 3em;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .content-list--grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -497,12 +517,12 @@ CUSTOM STYLES
   box-shadow: none;
   padding: 0;
     }
-& .content-list__item a:first-of-type {
+& .content-list__item .content-list__link {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: inherit;
-  height: 100%;
+  // height: 100%;
 }
    & .content-list__title {
   // min-height: 2.4em;
@@ -522,93 +542,206 @@ CUSTOM STYLES
     text-decoration: none;
 }
 
-.content-list__more:after {
-  content: "";
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-    width: 70px;
-    height: 70px;
-    background-image: radial-gradient(var(--ink) 1.6px, transparent 1.8px);
-    background-size: 9px 9px;
-    opacity: 0.1;
-    pointer-events: none;
-}
+// .content-list__more:after {
+//   content: "";
+//     position: absolute;
+//     bottom: -10px;
+//     right: -10px;
+//     width: 70px;
+//     height: 70px;
+//     background-image: radial-gradient(var(--ink) 1.6px, transparent 1.8px);
+//     background-size: 9px 9px;
+//     opacity: 0.1;
+//     pointer-events: none;
+// }
 
 //comic cover effect
 
-.comic-cover {
+/* ==========================================================================
+   COMIC COVER EFFECT — full block
+   ========================================================================== */
+
+.book-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 2000px;
+}
+
+@keyframes initAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-20deg);
+  }
+}
+
+.book {
+  width: 317px;
+  height: 497px;
   position: relative;
-  display: block;
-  padding: 0 0 12px 0; /* buffer below the cover for pages to peek into — clipped, can't reach the title */
-  overflow: hidden;
+  transform-style: preserve-3d;
+  transform: rotateY(-20deg);
+  transition: 1.5s ease;
+  animation: 1s ease 0s 1 initAnimation;
 }
 
-/* pages: hinged at the spine (left edge, which never moves),
-   fanning open toward the bottom-right only */
-.comic-cover__pages { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.book-container:hover .book, 
+.book-container:focus .book {
+  transform: rotateY(0deg);
+}
 
-.comic-cover__page {
+.book > :first-child {
   position: absolute;
-  inset: 0;
-  transform-origin: left;
-  box-shadow: 0 1px 2px rgba(21, 24, 28, 0.1);
-  transition: transform .4s ease;
+  top: 0;
+  left: 0;
+  background-color: red;
+  width: 317px;
+  height: 497px;
+  transform: translateZ(12.5px);
+  background-color: #495b7e;
+  border-radius: 0 0px 0px 0;
+  box-shadow: 2px 1px 2px #666;
 }
-.comic-cover__page:nth-child(1) { background: #f5f5f4; transform: skewY(0.6deg); z-index: 3; }
-.comic-cover__page:nth-child(2) { background: #ebebe9; transform: skewY(1.1deg); z-index: 2; }
-.comic-cover__page:nth-child(3) { background: #dcdcda; transform: skewY(1.6deg); z-index: 1; }
 
-.comic-cover:hover .comic-cover__page:nth-child(1) { transform: skewY(1deg); }
-.comic-cover:hover .comic-cover__page:nth-child(2) { transform: skewY(1.9deg); }
-.comic-cover:hover .comic-cover__page:nth-child(3) { transform: skewY(2.8deg); }
+.book::before {
+  position: absolute;
+  content: ' ';
+  background-color: #a52b2b;
+  left: 0;
+  top: 1px;
+  width: 23px;
+  height: 495px;
+  transform: translateX(303.5px) rotateY(90deg);
+  background: linear-gradient(90deg, 
+    #fff 0%,
+    #f9f9f9 5%,
+    #fff 10%,
+    #f9f9f9 15%,
+    #fff 20%,
+    #f9f9f9 25%,
+    #fff 30%,
+    #f9f9f9 35%,
+    #fff 40%,
+    #f9f9f9 45%,
+    #fff 50%,
+    #f9f9f9 55%,
+    #fff 60%,
+    #f9f9f9 65%,
+    #fff 70%,
+    #f9f9f9 75%,
+    #fff 80%,
+    #f9f9f9 85%,
+    #fff 90%,
+    #f9f9f9 95%,
+    #fff 100%
+    );
+}
 
-.comic-cover__inner { position: relative; z-index: 1; overflow: hidden; display: inline-block; width: 100%; perspective: 900px; transform-style: preserve-3d; transform-origin: left; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.book::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ' ';
+  width: 317px;
+  height: 497px;
+  transform: translateZ(-12.5px);
+  background-color: #a52b2b;
+  border-radius: 0 0px 0px 0;
+  // box-shadow: -10px 0 50px 10px #666;
+}
+// .comic-cover {
+//   position: relative;
+//   display: block;
+//   padding: 0 4px 4px 0;
+// }
 
-.comic-cover:hover .comic-cover__inner { transform: rotateY(-5deg); }
- 
-.comic-cover__inner img{
-  display:block;
-  width:100%;
-  position:relative;
-  z-index:1;
-}
- 
-/* static spine shadow + bottom vignette, no motion */
-.comic-cover__inner::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:2;
-  pointer-events:none;
-  background:
-    linear-gradient(to right, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0) 7%),
-    radial-gradient(circle at 50% 100%, rgba(0,0,0,0.32), transparent 60%);
-  mix-blend-mode:overlay;
-}
- 
-/* the single moving highlight band */
-.comic-cover__shine{
-  position:absolute;
-  top:-20%;
-  left:-60%;
-  width:45%;
-  height:140%;
-  z-index:3;
-  pointer-events:none;
-  background:linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.55) 50%, transparent 100%);
-  transform:translateX(0) rotate(18deg);
-  mix-blend-mode:overlay;
-  transition:transform .7s ease;
-}
-.comic-cover:hover .comic-cover__shine{
-  transform:translateX(260%) rotate(18deg);
-}
- 
-.comic-cover-wrap{transition:filter .3s ease;}
-.comic-cover-wrap:hover{filter:drop-shadow(10px 16px 14px rgba(0,0,0,0.28));}
+// /* inner wrapper: holds the cover image, clips the shine sweep,
+//    and handles the hover tilt — hinged at the spine (left edge) */
+// .comic-cover__inner {
+//   position: relative;
+//   z-index: 1;
+//   overflow: visible;
+//   display: inline-block;
+//   width: 100%;
+//   perspective: 900px;
+//   transform-style: preserve-3d;
+//   transform-origin: left;
+//   transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+// }
 
-.comic-cover img {border: 1px solid #c7c7c7;}
+// .comic-cover:hover .comic-cover__inner {
+//   transform: rotateY(-5deg);
+// }
+
+// /* the thin book effect: two solid offset copies behind the cover,
+//    just a couple of pixels each — reads as a thin stack, not a
+//    fat wedge of pages */
+// .comic-cover__inner img {
+//   display: block;
+//   width: 100%;
+//   position: relative;
+//   z-index: 1;
+//   border: 1px solid #c7c7c7;
+//   box-shadow:
+//     2px 2px 0 0 #efece0,
+//     4px 4px 0 0 #d7d1bb;
+//   transition: box-shadow .3s ease;
+// }
+
+// .comic-cover:hover .comic-cover__inner img {
+//   box-shadow:
+//     3px 3px 0 0 #efece0,
+//     6px 6px 0 0 #d7d1bb;
+// }
+
+// /* static spine shadow + bottom vignette, no motion */
+// .comic-cover__inner::before {
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+//   z-index: 2;
+//   pointer-events: none;
+//   background:
+//     linear-gradient(to right, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0) 7%),
+//     radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.22), transparent 60%);
+//   mix-blend-mode: overlay;
+// }
+
+// /* the single moving highlight band */
+// .comic-cover__shine {
+//   position: absolute;
+//   top: -20%;
+//   left: -60%;
+//   width: 45%;
+//   height: 140%;
+//   z-index: 3;
+//   pointer-events: none;
+//   background: linear-gradient(
+//     90deg,
+//     transparent 0%,
+//     rgba(255, 255, 255, 0.55) 50%,
+//     transparent 100%
+//   );
+//   transform: translateX(0) rotate(18deg);
+//   mix-blend-mode: overlay;
+//   transition: transform .7s ease;
+// }
+
+// .comic-cover:hover .comic-cover__shine {
+//   transform: translateX(260%) rotate(18deg);
+// }
+
+// /* wrapper around the whole card link — deepens the drop shadow on hover
+//    so the cover reads as lifting slightly off the page */
+// .comic-cover-wrap {
+//   transition: filter .3s ease;
+// }
+
+// .comic-cover-wrap:hover {
+//   filter: drop-shadow(10px 16px 14px rgba(0, 0, 0, 0.28));
+// }
 
 //panel
 
@@ -620,11 +753,16 @@ background: var(--ink);
     padding: 26px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 1em;
 }
 
 .panel--dark {
     background: var(--ink);
     color: var(--paper);
+
+    a {
+      color: #fff;
+    }
 }
 
 .panel__title {
@@ -700,6 +838,7 @@ background: linear-gradient(to right, #291d32 0%, rgba(37, 33, 104, 80%) 40%, rg
   line-height:0.95;
   text-shadow:6px 6px 0 #000;
   margin-bottom:32px;
+  text-transform: uppercase;
 }
  
 .hero__cta{
@@ -722,13 +861,9 @@ background: linear-gradient(to right, #291d32 0%, rgba(37, 33, 104, 80%) 40%, rg
   box-shadow:10px 10px 0 var(--ink);
 }
  
-@media (max-width:768px){
+@media (max-width:820px){
   .hero{padding:48px 0 40px;}
 }
-
-/* ---------- comic page viewer ---------- */
-
-/* ---------- comic page viewer ---------- */
 
 /* ---------- comic page viewer ---------- */
 
@@ -818,7 +953,7 @@ background: linear-gradient(to right, #291d32 0%, rgba(37, 33, 104, 80%) 40%, rg
 #mce-error-response{color:#ff8a8a;}
 #mce-success-response{color:var(--ice);}
 
-@media (max-width:768px){
+@media (max-width:820px){
   .grid-column-one-third{margin-top:40px;}
 }
 
@@ -869,6 +1004,10 @@ HELPER CLASSES
     width: 1px;
     white-space: nowrap;
     /* 1 */
+}
+
+.text-centre {
+  text-align: center;
 }
 
 /* Extends the .visuallyhidden class to allow the element */

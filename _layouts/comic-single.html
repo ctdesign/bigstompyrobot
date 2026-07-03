@@ -2,23 +2,45 @@
 layout: default 
 ---
  <div class="grid-container clearfix">
-    <h1>{{page.title}}</h1>
-<div class="grid-row">
-    <div class="grid-column-two-thirds">
-        
-        {{content}}
+    <div class="grid-row">
+        <div class="grid-column-full">
+            <h1>{{page.title}}</h1>
+        </div>
     </div>
-    <div class="grid-column-one-third">
+    
+<div class="grid-row">
+    
+    <div class="grid-column-two-thirds">
+        <div class="panel panel--dark text-centre">
+            View in the <a href="#" class="comic-viewer-open">comic viewer</a>, or scroll down &#8595;.         
+        </div>
+
+        {% if page.cover %}
+        <p><img src="{{ page.cover }}" alt="{{ page.title }} Cover" /></p>
+        {% endif %}
+
+        {% for pg in page.pages %}
+        <p><img src="{{ pg }}" alt="{{ page.title }} page {{ forloop.index }}" /></p>
+        {% endfor %}
+            
+    </div>
+     <div class="grid-column-one-third">
+        
         <dl class="panel">
             <dt>Title:</dt>
             <dd>{{ page.title }}</dd>
             <dt>Released on:</dt>
             <dd>{{ page.date | date: "%B %d, %Y" }}</dd>
+            <dt>Format:</dt>
+            <dd>{{ page.format }}</dd>
+            <dt>Length:</dt>
+            <dd>{{ page.length }} pages</dd>
+            <dt>Credits</dt>
+            <dd>{{ page.credits }}</dd>
        
         </dl>
-        <a href="#" class="button comic-viewer-open">Open image viewer</a>
-         
-
+         {{content}}
     </div>
+   
 </div>
 </div>

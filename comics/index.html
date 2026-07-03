@@ -12,26 +12,33 @@ permalink: /comics/
     <ul class="content-list content-list--grid">
 
     {% for post in site.comics reversed %}
+       <li class="content-list__item">
 
-   
-
-      <li class="content-list__item">
-        <a href="{{ post.url }}" class="content-list__link">
-
-          
-<span class="comic-cover">
-
-  <span class="comic-cover__inner">
-    <img src="{{ post.thumb }}" width="600"/>
-    <span class="comic-cover__shine"></span>
-  </span>
-</span>
+        <a href="{{ post.url }}" class="content-list__link book-container">
+          <div class="book">
+              <img src="{{ post.thumb }}" width="600"/>
+          </div>
+        </a>
+         <h3 class="content-list__title">{{ post.title }}</h3>
+          <p>{{ post.blurb }}</p>
+          <a href="{{ post.url }}" class="content-list__more">Read now &#8594;</a>
        
+        </li>
+      <!-- <li class="content-list__item">
+        <a href="{{ post.url }}" class="content-list__link">
+           <span class="comic-cover-wrap">
+            <span class="comic-cover">
+              <span class="comic-cover__inner">
+                <img src="{{ post.thumb }}" width="600"/>
+                <span class="comic-cover__shine"></span>
+              </span>
+            </span>
+          </span>
         </a>
            <h3 class="content-list__title">{{ post.title }}</h3>
           <p>{{ post.blurb }}</p>
           <a href="{{ post.url }}" class="content-list__more">Read now &#8594;</a>
-      </li>
+      </li> -->
 
     {% endfor %}
     </ul>

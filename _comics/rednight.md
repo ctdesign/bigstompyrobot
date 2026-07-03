@@ -1,11 +1,23 @@
 ---
-title: "Red Night"
+title: "Red Night (part 1)"
 blurb: "An action packed mystery set in a fantastical and retro-futuristic universe."
 date: 2025-02-08
 collection: comics
+credits: Story & Art by Chris Taylor
+length: 6
+format: One shot (chapter 1 of 4)
 layout: comic-single
 thumb: "/assets/images/comics/red-night/red-night-cover-thumb.jpg"
+cover: /assets/images/comics/red-night/Rednight-cover_web.jpg
+pages:
+  - /assets/images/comics/red-night/Rednight-pt1-pg1_web.jpg
+  - /assets/images/comics/red-night/Rednight-pt1-pg2_web.jpg
+  - /assets/images/comics/red-night/Rednight-pt1-pg3_web.jpg
+  - /assets/images/comics/red-night/Rednight-pt1-pg4_web.jpg
+  - /assets/images/comics/red-night/Rednight-pt1-pg5_web.jpg
+  - /assets/images/comics/red-night/Rednight-pt1-pg6_web.jpg
 ---
+### About 
 
 Red Night is the thrilling debut from Chris Taylor, featuring an action packed mystery set in a fantastical and retro-futuristic universe.
 
@@ -13,23 +25,7 @@ In the far future, a brash young fighter pilot for the Britannic Navy crashes on
 
 Will his noble intentions and stiff upper lip be enough to uncover the truth of it all and, most importantly, escape with his life?
     
-![Red Night Cover](/assets/images/comics/red-night/Rednight-cover_web.jpg)
-
-![Red Night page 1](/assets/images/comics/red-night/Rednight-pt1-pg1_web.jpg)
-
-![Red Night page 2](/assets/images/comics/red-night/Rednight-pt1-pg2_web.jpg)
-
-![Red Night page 3](/assets/images/comics/red-night/Rednight-pt1-pg3_web.jpg)
-
-![Red Night page 4](/assets/images/comics/red-night/Rednight-pt1-pg4_web.jpg)
-
-![Red Night page 5](/assets/images/comics/red-night/Rednight-pt1-pg5_web.jpg)
-
-![Red Night page 6](/assets/images/comics/red-night/Rednight-pt1-pg6_web.jpg)
-    
-End of part 1...
-    
-### Acknowledgements
+### Thanks
     
 Story, art and letters by Chris Taylor.
 

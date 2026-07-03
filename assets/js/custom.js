@@ -42,7 +42,7 @@
   viewer.className = 'comic-viewer';
   viewer.innerHTML =
     '<div class="comic-viewer__bar">' +
-      '<button type="button" class="comic-viewer__mode">Zoom in</button>' +
+      '<button type="button" class="comic-viewer__mode">Zoom to width</button>' +
       '<div class="comic-viewer__pagenav">' +
         '<button type="button" class="comic-viewer__pagebtn comic-viewer__prev" aria-label="Previous page">&lsaquo;</button>' +
         '<span class="comic-viewer__count"></span>' +
@@ -67,7 +67,7 @@
     mode = newMode;
     stage.classList.toggle('comic-viewer__stage--fit', mode === 'fit');
     stage.classList.toggle('comic-viewer__stage--full', mode === 'full');
-    modeBtn.textContent = mode === 'fit' ? 'Zoom in' : 'Zoom out';
+    modeBtn.textContent = mode === 'fit' ? 'Zoom to width' : 'Zoom out';
   }
 
   function show(index) {
@@ -111,11 +111,11 @@
     var isLeftHalf = (e.clientX - rect.left) < rect.width / 2;
     show(current + (isLeftHalf ? -1 : 1));
   });
-  imageEl.addEventListener('mousemove', function (e) {
-    var rect = imageEl.getBoundingClientRect();
-    var isLeftHalf = (e.clientX - rect.left) < rect.width / 2;
-    imageEl.style.cursor = isLeftHalf ? 'w-resize' : 'e-resize';
-  });
+  // imageEl.addEventListener('mousemove', function (e) {
+  //   var rect = imageEl.getBoundingClientRect();
+  //   var isLeftHalf = (e.clientX - rect.left) < rect.width / 2;
+  //   imageEl.style.cursor = isLeftHalf ? 'w-resize' : 'e-resize';
+  // });
 
   modeBtn.addEventListener('click', function () {
     setMode(mode === 'fit' ? 'full' : 'fit');
