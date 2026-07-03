@@ -208,14 +208,10 @@ img{max-width:100%; display:block;}
 CUSTOM STYLES
 ============================================================================= */
 /* =========================================================
-   Big Stompy Robot — main.css
+   Big Stompy Robot main.css
    Fonts (add to <head>):
    https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap
    ========================================================= */
-
-
-
-
 /* ---------- grid system ---------- */
   .grid-container {
     display: block;
@@ -558,7 +554,7 @@ CUSTOM STYLES
 //comic cover effect
 
 /* ==========================================================================
-   COMIC COVER EFFECT — full block
+   COMIC COVER EFFECT  full block
    ========================================================================== */
 
 .book-container {
@@ -658,7 +654,7 @@ CUSTOM STYLES
 // }
 
 // /* inner wrapper: holds the cover image, clips the shine sweep,
-//    and handles the hover tilt — hinged at the spine (left edge) */
+//    and handles the hover tilt  hinged at the spine (left edge) */
 // .comic-cover__inner {
 //   position: relative;
 //   z-index: 1;
@@ -676,7 +672,7 @@ CUSTOM STYLES
 // }
 
 // /* the thin book effect: two solid offset copies behind the cover,
-//    just a couple of pixels each — reads as a thin stack, not a
+//    just a couple of pixels each - reads as a thin stack, not a
 //    fat wedge of pages */
 // .comic-cover__inner img {
 //   display: block;
@@ -733,7 +729,7 @@ CUSTOM STYLES
 //   transform: translateX(260%) rotate(18deg);
 // }
 
-// /* wrapper around the whole card link — deepens the drop shadow on hover
+// /* wrapper around the whole card link - deepens the drop shadow on hover
 //    so the cover reads as lifting slightly off the page */
 // .comic-cover-wrap {
 //   transition: filter .3s ease;

@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="hero">
-  <div class="hero__bg" style="background-image:url('/assets/images/hero/suitable-for-salvage.png');"></div>
+  <div class="hero__bg" style="background-image:url('/assets/images/hero/suitable-for-salvage.jpg');"></div>
   <div class="hero__gradient"></div>
   <div class="grid-container clearfix">
     <div class="grid-row">
