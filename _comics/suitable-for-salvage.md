@@ -20,6 +20,6 @@ pages:
 
 In space, something is bound to go wrong on a ship. When it does, the Intergalactic Highway Repair corporation is there for it's valued customers. It's a lonely, thankless job for their repair specialists. 
 
-_Suitable for Salvage_ is the debut short comic from writer Craig Parker, and artist Chris Taylor.
-
 It almost makes you wonder what would motivate someone to do it...
+
+_Suitable for Salvage_ is the debut short comic from writer Craig Parker, and artist Chris Taylor.
